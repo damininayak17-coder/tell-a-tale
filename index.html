@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ✏️ EDIT: Page title shown in browser tab -->
+  <title>Tell A Tale — Curated Stays & Stories</title>
+
+  <!-- ✏️ EDIT: Meta description for SEO/social sharing -->
+  <meta name="description" content="Tell A Tale crafts curated stays, local experiences, and thoughtful retreats across India's most storied cities." />
+
+  <!-- Google Fonts — two carefully chosen typefaces -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- =====================================================
+       NAVIGATION
+       ✏️ EDIT: Logo text, nav links, and href destinations
+  ====================================================== -->
+  <nav class="nav">
+    <div class="nav__logo">Tell A Tale</div>
+    <div class="nav__links">
+      <a href="#about">About</a>
+      <a href="#building">What We Build</a>
+      <a href="#cities">Cities</a>
+      <a href="#contact" class="nav__cta">Partner With Us</a>
+    </div>
+    <!-- Mobile hamburger (toggled by script.js) -->
+    <button class="nav__burger" aria-label="Open menu" id="burger">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile nav drawer -->
+  <div class="nav__drawer" id="drawer">
+    <a href="#about" class="drawer__link">About</a>
+    <a href="#building" class="drawer__link">What We Build</a>
+    <a href="#cities" class="drawer__link">Cities</a>
+    <a href="#contact" class="drawer__link">Partner With Us</a>
+  </div>
+
+
+  <!-- =====================================================
+       HERO SECTION
+       ✏️ EDIT: Tagline, button text, and button links
+  ====================================================== -->
+  <section class="hero" id="home">
+    <div class="hero__bg"></div>
+
+    <div class="hero__content">
+      <p class="hero__eyebrow">bytellatale.com</p>
+
+      <!-- ✏️ EDIT: Main brand name -->
+      <h1 class="hero__title">Tell A Tale</h1>
+
+      <!-- ✏️ EDIT: Poetic tagline — keep it short and evocative -->
+      <p class="hero__tagline">
+        Every stay is a sentence.<br />
+        Every place, a chapter.<br />
+        <em>We craft the story.</em>
+      </p>
+
+      <div class="hero__actions">
+        <!-- ✏️ EDIT: Update href="#contact" to your actual contact/form page -->
+        <a href="#contact" class="btn btn--primary">Partner With Us</a>
+
+        <!-- ✏️ EDIT: Update href to a waitlist, newsletter, or launch page -->
+        <a href="#building" class="btn btn--ghost">Coming Soon →</a>
+      </div>
+    </div>
+
+    <!-- Decorative scroll hint -->
+    <div class="hero__scroll" aria-hidden="true">
+      <span class="scroll__line"></span>
+      <span class="scroll__text">scroll</span>
+    </div>
+  </section>
+
+
+  <!-- =====================================================
+       ABOUT SECTION
+       ✏️ EDIT: Brand philosophy text — keep tone warm & human
+  ====================================================== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about__grid">
+
+        <div class="about__label">
+          <span class="section-label">Our Philosophy</span>
+        </div>
+
+        <div class="about__body">
+          <h2 class="about__heading">
+            Hospitality as a<br /><em>form of storytelling.</em>
+          </h2>
+
+          <!-- ✏️ EDIT: Replace with your own brand story -->
+          <p class="about__text">
+            Tell A Tale was born from a belief that where you stay shapes what you remember.
+            We partner with spaces, hosts, and cities to create experiences that linger —
+            stays that feel like they were made for you, mornings that belong to the neighbourhood,
+            and moments that quietly become your best travel stories.
+          </p>
+          <p class="about__text">
+            We are not a booking platform. We are curators, storytellers, and believers in the
+            kind of hospitality that doesn't announce itself — it simply makes you feel at home
+            somewhere new.
+          </p>
+
+          <!-- ✏️ EDIT: A closing line / brand values snippet -->
+          <ul class="about__values">
+            <li>Curated with intention</li>
+            <li>Rooted in place</li>
+            <li>Made for the curious</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =====================================================
+       WHAT WE'RE BUILDING SECTION
+       ✏️ EDIT: Card titles, descriptions, and icons/emoji
+  ====================================================== -->
+  <section class="building section" id="building">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-label">What We're Building</span>
+        <h2 class="section-title">Spaces for stories<br /><em>to unfold in.</em></h2>
+      </div>
+
+      <div class="cards">
+
+        <!-- ✏️ EDIT: Card 1 — Stays -->
+        <div class="card" data-index="1">
+          <div class="card__icon">◈</div>
+          <h3 class="card__title">Curated Stays</h3>
+          <p class="card__desc">
+            Hand-picked homes, boutique properties, and one-of-a-kind rooms —
+            chosen for character, not category. Every space has something to say.
+          </p>
+          <span class="card__status card__status--soon">Coming Soon</span>
+        </div>
+
+        <!-- ✏️ EDIT: Card 2 — City Experiences -->
+        <div class="card" data-index="2">
+          <div class="card__icon">◉</div>
+          <h3 class="card__title">City Experiences</h3>
+          <p class="card__desc">
+            Guided mornings in the old quarter. Secret dinner tables. Neighbourhood
+            walks with people who actually live there. The city, unfiltered.
+          </p>
+          <span class="card__status card__status--soon">Coming Soon</span>
+        </div>
+
+        <!-- ✏️ EDIT: Card 3 — Retreats -->
+        <div class="card" data-index="3">
+          <div class="card__icon">◇</div>
+          <h3 class="card__title">Retreats</h3>
+          <p class="card__desc">
+            Slow, intentional escapes — for individuals, creatives, and small groups
+            who want to step away, breathe, and return with something new to say.
+          </p>
+          <span class="card__status card__status--soon">Coming Soon</span>
+        </div>
+
+        <!-- ✏️ EDIT: Card 4 — Gatherings -->
+        <div class="card" data-index="4">
+          <div class="card__icon">◎</div>
+          <h3 class="card__title">Gatherings & Events</h3>
+          <p class="card__desc">
+            Intimate dinners, community conversations, and moments designed for
+            connection. The kind of evenings people talk about for years.
+          </p>
+          <span class="card__status card__status--soon">Coming Soon</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =====================================================
+       CITIES SECTION
+       ✏️ EDIT: City names and descriptors
+       To add a city: duplicate a .city block and edit text
+  ====================================================== -->
+  <section class="cities section" id="cities">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-label">Where We Are</span>
+        <h2 class="section-title">Stories live<br /><em>in particular places.</em></h2>
+      </div>
+
+      <div class="cities__grid">
+
+        <!-- ✏️ EDIT: City 1 -->
+        <div class="city">
+          <div class="city__gradient city__gradient--blr"></div>
+          <div class="city__body">
+            <span class="city__number">01</span>
+            <h3 class="city__name">Bangalore</h3>
+            <p class="city__desc">Garden city, startup capital, and a living tension between old lanes and new ambition.</p>
+          </div>
+        </div>
+
+        <!-- ✏️ EDIT: City 2 -->
+        <div class="city">
+          <div class="city__gradient city__gradient--hyd"></div>
+          <div class="city__body">
+            <span class="city__number">02</span>
+            <h3 class="city__name">Hyderabad</h3>
+            <p class="city__desc">Pearls, palaces, and biriyani — a city of layers, each more textured than the last.</p>
+          </div>
+        </div>
+
+        <!-- ✏️ EDIT: Add more cities here as you expand -->
+        <div class="city city--coming">
+          <div class="city__gradient city__gradient--more"></div>
+          <div class="city__body">
+            <span class="city__number">+</span>
+            <h3 class="city__name">More Coming</h3>
+            <p class="city__desc">Mumbai, Goa, Jaipur, and beyond — each chapter of the story is still being written.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =====================================================
+       INSTAGRAM / CONTACT SECTION
+       ✏️ EDIT: Instagram handle, email, and form link
+  ====================================================== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+
+      <div class="contact__inner">
+        <span class="section-label">Stay In Touch</span>
+        <h2 class="contact__heading">
+          Let's tell<br /><em>something together.</em>
+        </h2>
+
+        <!-- ✏️ EDIT: Update with your brand's mission/CTA paragraph -->
+        <p class="contact__text">
+          Whether you're a host with a story, a traveller with taste, or a brand
+          that believes in meaningful experiences — we'd love to hear from you.
+        </p>
+
+        <div class="contact__actions">
+          <!-- ✏️ EDIT: Replace href with your actual Instagram URL -->
+          <a href="https://instagram.com/bytellatale" target="_blank" rel="noopener" class="btn btn--primary">
+            Follow on Instagram
+          </a>
+
+          <!-- ✏️ EDIT: Replace href with mailto: or a Typeform/Google Form link -->
+          <a href="mailto:hello@bytellatale.com" class="btn btn--outline">
+            hello@bytellatale.com
+          </a>
+        </div>
+
+        <!-- ✏️ EDIT: Instagram handle display -->
+        <p class="contact__handle">@bytellatale</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =====================================================
+       FOOTER
+       ✏️ EDIT: Footer tagline, links, and copyright year
+  ====================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <span class="footer__logo">Tell A Tale</span>
+          <!-- ✏️ EDIT: Footer mini-tagline -->
+          <span class="footer__tagline">bytellatale.com</span>
+        </div>
+
+        <div class="footer__links">
+          <!-- ✏️ EDIT: Add legal pages, social links, etc. -->
+          <a href="#about">About</a>
+          <a href="#cities">Cities</a>
+          <a href="mailto:hello@bytellatale.com">Contact</a>
+        </div>
+      </div>
+
+      <!-- ✏️ EDIT: Update year when needed -->
+      <p class="footer__copy">© 2025 Tell A Tale. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
