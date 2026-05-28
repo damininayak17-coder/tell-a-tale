@@ -3,35 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- ✏️ EDIT: Page title shown in browser tab -->
   <title>Tell A Tale — Curated Stays & Stories</title>
-
-  <!-- ✏️ EDIT: Meta description for SEO/social sharing -->
-  <meta name="description" content="Tell A Tale crafts curated stays, local experiences, and thoughtful retreats across India's most storied cities." />
-
-  <!-- Google Fonts — two carefully chosen typefaces -->
+  <meta name="description" content="Tell A Tale is a curated stay and community experience in Bangalore. Superhost, Guest Favourite, 5 stars. Partner with us to grow together." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
-
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <!-- =====================================================
        NAVIGATION
-       ✏️ EDIT: Logo text, nav links, and href destinations
+       ✏️ EDIT: Nav links and href destinations
+       ✏️ LOGO: Once you have logo.png ready (background removed),
+                replace the text "Tell A Tale" div with:
+                <img src="logo.png" alt="Tell A Tale" class="nav__logo-img" />
   ====================================================== -->
   <nav class="nav">
     <div class="nav__logo">Tell A Tale</div>
     <div class="nav__links">
-      <a href="#about">About</a>
-      <a href="#building">What We Build</a>
-      <a href="#cities">Cities</a>
-      <a href="#contact" class="nav__cta">Partner With Us</a>
+      <a href="#about">Our Story</a>
+      <a href="#building">What We Do</a>
+      <a href="#partner">Partner With Us</a>
+      <a href="#contact" class="nav__cta">Get In Touch</a>
     </div>
-    <!-- Mobile hamburger (toggled by script.js) -->
     <button class="nav__burger" aria-label="Open menu" id="burger">
       <span></span><span></span><span></span>
     </button>
@@ -39,43 +34,36 @@
 
   <!-- Mobile nav drawer -->
   <div class="nav__drawer" id="drawer">
-    <a href="#about" class="drawer__link">About</a>
-    <a href="#building" class="drawer__link">What We Build</a>
-    <a href="#cities" class="drawer__link">Cities</a>
-    <a href="#contact" class="drawer__link">Partner With Us</a>
+    <a href="#about" class="drawer__link">Our Story</a>
+    <a href="#building" class="drawer__link">What We Do</a>
+    <a href="#partner" class="drawer__link">Partner With Us</a>
+    <a href="#contact" class="drawer__link">Get In Touch</a>
   </div>
 
 
   <!-- =====================================================
        HERO SECTION
-       ✏️ EDIT: Tagline, button text, and button links
+       ✏️ EDIT: Tagline and button links
   ====================================================== -->
   <section class="hero" id="home">
     <div class="hero__bg"></div>
-
     <div class="hero__content">
-      <p class="hero__eyebrow">bytellatale.com</p>
-
-      <!-- ✏️ EDIT: Main brand name -->
+      <p class="hero__eyebrow">Bangalore · bytellatale.com</p>
       <h1 class="hero__title">Tell A Tale</h1>
-
-      <!-- ✏️ EDIT: Poetic tagline — keep it short and evocative -->
       <p class="hero__tagline">
         Every stay is a sentence.<br />
-        Every place, a chapter.<br />
-        <em>We craft the story.</em>
+        <em>Every place, a chapter.</em>
       </p>
-
+      <div class="hero__badges">
+        <span class="badge">★ 5.0 · 27 Reviews</span>
+        <span class="badge">Guest Favourite</span>
+        <span class="badge">Superhost</span>
+      </div>
       <div class="hero__actions">
-        <!-- ✏️ EDIT: Update href="#contact" to your actual contact/form page -->
-        <a href="#contact" class="btn btn--primary">Partner With Us</a>
-
-        <!-- ✏️ EDIT: Update href to a waitlist, newsletter, or launch page -->
-        <a href="#building" class="btn btn--ghost">Coming Soon →</a>
+        <a href="#partner" class="btn btn--primary">Partner With Us</a>
+        <a href="#about" class="btn btn--ghost">Our Story →</a>
       </div>
     </div>
-
-    <!-- Decorative scroll hint -->
     <div class="hero__scroll" aria-hidden="true">
       <span class="scroll__line"></span>
       <span class="scroll__text">scroll</span>
@@ -85,38 +73,49 @@
 
   <!-- =====================================================
        ABOUT SECTION
-       ✏️ EDIT: Brand philosophy text — keep tone warm & human
+       ✏️ EDIT: The story text below is Dimple's — edit freely
   ====================================================== -->
   <section class="about section" id="about">
     <div class="container">
       <div class="about__grid">
 
         <div class="about__label">
-          <span class="section-label">Our Philosophy</span>
+          <span class="section-label">Our Story</span>
         </div>
 
         <div class="about__body">
           <h2 class="about__heading">
-            Hospitality as a<br /><em>form of storytelling.</em>
+            Hospitality as a<br /><em>form of belonging.</em>
           </h2>
 
-          <!-- ✏️ EDIT: Replace with your own brand story -->
           <p class="about__text">
-            Tell A Tale was born from a belief that where you stay shapes what you remember.
-            We partner with spaces, hosts, and cities to create experiences that linger —
-            stays that feel like they were made for you, mornings that belong to the neighbourhood,
-            and moments that quietly become your best travel stories.
+            I never really had one home growing up. Home was wherever I was — a hostel bunk,
+            a relative's spare room, a new city that didn't know my name yet. That taught me
+            something early: the place and the person hosting you matter more than any amenity.
+            They can make you feel like you belong, or like a stranger.
           </p>
           <p class="about__text">
-            We are not a booking platform. We are curators, storytellers, and believers in the
-            kind of hospitality that doesn't announce itself — it simply makes you feel at home
-            somewhere new.
+            Tell A Tale started from that feeling. A belief that hospitality, done with intention,
+            can make someone feel genuinely at home — even somewhere entirely new. Every guest I
+            welcome, every space I curate, any stories we chase or any event we bring to life that
+            turns strangers into friends — it's all rooted in that same quiet hope: that no one
+            should feel out of place in a place they're expecting to rest.
+          </p>
+          <p class="about__text">
+            This is small, intentional, and very much still becoming. But the feeling I want
+            every guest to leave with? That one's already figured out.
           </p>
 
-          <!-- ✏️ EDIT: A closing line / brand values snippet -->
+          <!-- Pull quote -->
+          <blockquote class="about__quote">
+            "The cost you pay for travelling is that you are never completely at home —
+            a piece of your heart is always somewhere else."
+            <cite>We hope to keep a piece of yours with us.</cite>
+          </blockquote>
+
           <ul class="about__values">
-            <li>Curated with intention</li>
-            <li>Rooted in place</li>
+            <li>Rooted in belonging</li>
+            <li>Built on trust</li>
             <li>Made for the curious</li>
           </ul>
         </div>
@@ -127,61 +126,62 @@
 
 
   <!-- =====================================================
-       WHAT WE'RE BUILDING SECTION
-       ✏️ EDIT: Card titles, descriptions, and icons/emoji
+       WHAT WE DO SECTION
+       ✏️ EDIT: Card titles, descriptions, status labels
+       Status options: "Live in Bangalore" or "Coming Soon"
   ====================================================== -->
   <section class="building section" id="building">
     <div class="container">
 
       <div class="section-header">
-        <span class="section-label">What We're Building</span>
-        <h2 class="section-title">Spaces for stories<br /><em>to unfold in.</em></h2>
+        <span class="section-label">What We Do</span>
+        <h2 class="section-title">Small things done<br /><em>with full heart.</em></h2>
       </div>
 
       <div class="cards">
 
-        <!-- ✏️ EDIT: Card 1 — Stays -->
+        <!-- Card 1 — the real thing -->
         <div class="card" data-index="1">
           <div class="card__icon">◈</div>
           <h3 class="card__title">Curated Stays</h3>
           <p class="card__desc">
-            Hand-picked homes, boutique properties, and one-of-a-kind rooms —
-            chosen for character, not category. Every space has something to say.
+            A thoughtfully set up home in Jayanagar, Bangalore — private room, attached bathroom,
+            board games, books, resident cats, and a host who genuinely means it when she says welcome.
           </p>
-          <span class="card__status card__status--soon">Coming Soon</span>
+          <span class="card__status card__status--live">Live in Bangalore</span>
         </div>
 
-        <!-- ✏️ EDIT: Card 2 — City Experiences -->
+        <!-- Card 2 -->
         <div class="card" data-index="2">
-          <div class="card__icon">◉</div>
-          <h3 class="card__title">City Experiences</h3>
-          <p class="card__desc">
-            Guided mornings in the old quarter. Secret dinner tables. Neighbourhood
-            walks with people who actually live there. The city, unfiltered.
-          </p>
-          <span class="card__status card__status--soon">Coming Soon</span>
-        </div>
-
-        <!-- ✏️ EDIT: Card 3 — Retreats -->
-        <div class="card" data-index="3">
-          <div class="card__icon">◇</div>
-          <h3 class="card__title">Retreats</h3>
-          <p class="card__desc">
-            Slow, intentional escapes — for individuals, creatives, and small groups
-            who want to step away, breathe, and return with something new to say.
-          </p>
-          <span class="card__status card__status--soon">Coming Soon</span>
-        </div>
-
-        <!-- ✏️ EDIT: Card 4 — Gatherings -->
-        <div class="card" data-index="4">
           <div class="card__icon">◎</div>
-          <h3 class="card__title">Gatherings & Events</h3>
+          <h3 class="card__title">Board Games Nights</h3>
           <p class="card__desc">
-            Intimate dinners, community conversations, and moments designed for
-            connection. The kind of evenings people talk about for years.
+            Every guest gets an invitation. Strangers sit down, someone explains the rules,
+            and an hour later they're laughing like old friends. It's our favourite part.
           </p>
-          <span class="card__status card__status--soon">Coming Soon</span>
+          <span class="card__status card__status--live">A Tell A Tale Signature</span>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card" data-index="3">
+          <div class="card__icon">◉</div>
+          <h3 class="card__title">Story Circles</h3>
+          <p class="card__desc">
+            Community gatherings built around shared stories — an attempt to bring people
+            together and remind each other we're not as alone as our Instagram feeds suggest.
+          </p>
+          <span class="card__status card__status--soon">Reviving Soon</span>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card" data-index="4">
+          <div class="card__icon">◇</div>
+          <h3 class="card__title">City Experiences & More</h3>
+          <p class="card__desc">
+            Neighbourhood walks, local dinners, retreats, and community events — the longer
+            vision for what Tell A Tale can be. One chapter at a time.
+          </p>
+          <span class="card__status card__status--soon">On The Horizon</span>
         </div>
 
       </div>
@@ -190,9 +190,150 @@
 
 
   <!-- =====================================================
+       PARTNER WITH US SECTION — PRIMARY CTA FOR LANDLORDS
+       ✏️ EDIT: Offer details, credentials, and email link
+  ====================================================== -->
+  <section class="partner section" id="partner">
+    <div class="container">
+
+      <div class="partner__grid">
+
+        <div class="partner__left">
+          <span class="section-label">For Property Owners</span>
+          <h2 class="partner__heading">
+            Your property,<br /><em>in good hands.</em>
+          </h2>
+          <p class="partner__text">
+            Tell A Tale is looking to partner with property owners in Bangalore who want
+            their space to be more than just a rental — to be part of something intentional.
+          </p>
+          <p class="partner__text">
+            I handle everything: guest filtering, maintenance coordination, check-ins,
+            communication, and ensuring your property is treated with care. You get
+            reliable occupancy, zero hassle, and a partner who is personally invested
+            in how your space is experienced.
+          </p>
+          <p class="partner__text">
+            I'm open to both rental agreements and profit-sharing arrangements —
+            whatever works best for you. Let's talk and figure it out together.
+          </p>
+
+          <!-- ✏️ EDIT: Update email if it changes -->
+          <a href="mailto:hello@bytellatale.com?subject=Partnership Enquiry" class="btn btn--primary partner__cta">
+            I'm just an email away →
+          </a>
+          <p class="partner__email">hello@bytellatale.com</p>
+        </div>
+
+        <div class="partner__right">
+          <div class="partner__credentials">
+            <span class="section-label">Why Trust Us</span>
+            <div class="cred">
+              <span class="cred__number">5.0</span>
+              <span class="cred__label">Star rating across all 27 reviews</span>
+            </div>
+            <div class="cred">
+              <span class="cred__number">1.5yr</span>
+              <span class="cred__label">Airbnb Superhost — continuously maintained</span>
+            </div>
+            <div class="cred">
+              <span class="cred__number">Top 5%</span>
+              <span class="cred__label">Of all homes on Airbnb based on ratings & reliability</span>
+            </div>
+            <div class="cred">
+              <span class="cred__number">100%</span>
+              <span class="cred__label">Response rate · Responds within a few hours</span>
+            </div>
+            <div class="cred__note">
+              ◈ Guest Favourite · Airbnb verified
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =====================================================
+       REVIEWS SECTION
+       ✏️ EDIT: Swap in different reviews, keep first name only
+  ====================================================== -->
+  <section class="reviews section" id="reviews">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-label">What Guests Say</span>
+        <h2 class="section-title">In their<br /><em>own words.</em></h2>
+      </div>
+
+      <div class="reviews__grid">
+
+        <div class="review">
+          <p class="review__text">
+            "I have checked out but already feeling home-sick from going away. This was more than a home for us.
+            We were considered part of the house from the moment we checked in."
+          </p>
+          <span class="review__name">Udgam</span>
+        </div>
+
+        <div class="review">
+          <p class="review__text">
+            "Dimple's home made all the difference in making my trip happy, comfortable and memorable.
+            It's a rare find for sure — I genuinely lucked out finding her space."
+          </p>
+          <span class="review__name">Charushi</span>
+        </div>
+
+        <div class="review">
+          <p class="review__text">
+            "She went out of her way to make it feel like home. The property is beautifully maintained
+            and thoughtfully managed — I couldn't have asked for a better experience."
+          </p>
+          <span class="review__name">Akshay</span>
+        </div>
+
+        <div class="review">
+          <p class="review__text">
+            "What differentiates this place from the rest is the quality of everything — the interiors,
+            decor, lighting. The place feels upscale and worth the money."
+          </p>
+          <span class="review__name">Aditya</span>
+        </div>
+
+        <div class="review">
+          <p class="review__text">
+            "We played Infinite games with Dimple, cooked some crazy meals and she took us around the city.
+            When I say we lucked out — we were all teary eyed leaving after a month."
+          </p>
+          <span class="review__name">Mridula</span>
+        </div>
+
+        <div class="review">
+          <p class="review__text">
+            "Dimple and her sister gifted us a cake for our anniversary — such a thoughtful gesture.
+            The house was cozy, clean, and had everything we needed. Our first Airbnb, and unforgettable."
+          </p>
+          <span class="review__name">Ananthakrishnan</span>
+        </div>
+
+      </div>
+
+      <!-- Link to full listing -->
+      <div class="reviews__footer">
+        <a href="https://www.airbnb.co.uk/rooms/1237638702999264351" target="_blank" rel="noopener" class="reviews__link">
+          Read all 27 reviews on Airbnb →
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =====================================================
        CITIES SECTION
-       ✏️ EDIT: City names and descriptors
-       To add a city: duplicate a .city block and edit text
+       ✏️ EDIT: Add city cards as you expand
+       To add a city: duplicate a .city block
   ====================================================== -->
   <section class="cities section" id="cities">
     <div class="container">
@@ -204,33 +345,23 @@
 
       <div class="cities__grid">
 
-        <!-- ✏️ EDIT: City 1 -->
-        <div class="city">
+        <div class="city city--active">
           <div class="city__gradient city__gradient--blr"></div>
           <div class="city__body">
             <span class="city__number">01</span>
             <h3 class="city__name">Bangalore</h3>
-            <p class="city__desc">Garden city, startup capital, and a living tension between old lanes and new ambition.</p>
+            <p class="city__desc">Jayanagar — old Bangalore charm, quiet neighbourhood, 10 minutes from the metro. Home base.</p>
+            <span class="city__live">Active</span>
           </div>
         </div>
 
-        <!-- ✏️ EDIT: City 2 -->
-        <div class="city">
-          <div class="city__gradient city__gradient--hyd"></div>
-          <div class="city__body">
-            <span class="city__number">02</span>
-            <h3 class="city__name">Hyderabad</h3>
-            <p class="city__desc">Pearls, palaces, and biriyani — a city of layers, each more textured than the last.</p>
-          </div>
-        </div>
-
-        <!-- ✏️ EDIT: Add more cities here as you expand -->
+        <!-- ✏️ EDIT: Add more cities here as you expand — duplicate this block -->
         <div class="city city--coming">
           <div class="city__gradient city__gradient--more"></div>
           <div class="city__body">
             <span class="city__number">+</span>
             <h3 class="city__name">More Coming</h3>
-            <p class="city__desc">Mumbai, Goa, Jaipur, and beyond — each chapter of the story is still being written.</p>
+            <p class="city__desc">The next chapter is being written. If you have a space with a story, let's talk.</p>
           </div>
         </div>
 
@@ -240,67 +371,57 @@
 
 
   <!-- =====================================================
-       INSTAGRAM / CONTACT SECTION
-       ✏️ EDIT: Instagram handle, email, and form link
+       CONTACT / INSTAGRAM SECTION
+       ✏️ EDIT: Instagram handles and email
   ====================================================== -->
   <section class="contact section" id="contact">
     <div class="container">
-
       <div class="contact__inner">
         <span class="section-label">Stay In Touch</span>
         <h2 class="contact__heading">
-          Let's tell<br /><em>something together.</em>
+          Come find<br /><em>your chapter.</em>
         </h2>
-
-        <!-- ✏️ EDIT: Update with your brand's mission/CTA paragraph -->
         <p class="contact__text">
-          Whether you're a host with a story, a traveller with taste, or a brand
-          that believes in meaningful experiences — we'd love to hear from you.
+          Whether you're looking for a stay in Bangalore, want to collaborate on a story,
+          or are a property owner curious about partnering — we'd love to hear from you.
         </p>
-
         <div class="contact__actions">
-          <!-- ✏️ EDIT: Replace href with your actual Instagram URL -->
-          <a href="https://instagram.com/bytellatale" target="_blank" rel="noopener" class="btn btn--primary">
-            Follow on Instagram
+          <!-- ✏️ EDIT: This is the active story-sharing Instagram page -->
+          <a href="https://instagram.com/tellatale_in" target="_blank" rel="noopener" class="btn btn--primary">
+            Follow @tellatale_in
           </a>
-
-          <!-- ✏️ EDIT: Replace href with mailto: or a Typeform/Google Form link -->
           <a href="mailto:hello@bytellatale.com" class="btn btn--outline">
             hello@bytellatale.com
           </a>
         </div>
-
-        <!-- ✏️ EDIT: Instagram handle display -->
-        <p class="contact__handle">@bytellatale</p>
+        <!-- ✏️ EDIT: Uncomment when @bytellatale Instagram is active
+        <p class="contact__note">Brand page coming soon: @bytellatale</p>
+        -->
       </div>
-
     </div>
   </section>
 
 
   <!-- =====================================================
        FOOTER
-       ✏️ EDIT: Footer tagline, links, and copyright year
+       ✏️ EDIT: Links and copyright year
   ====================================================== -->
   <footer class="footer">
     <div class="container">
       <div class="footer__inner">
         <div class="footer__brand">
           <span class="footer__logo">Tell A Tale</span>
-          <!-- ✏️ EDIT: Footer mini-tagline -->
-          <span class="footer__tagline">bytellatale.com</span>
+          <span class="footer__tagline">bytellatale.com · Bangalore</span>
         </div>
-
         <div class="footer__links">
-          <!-- ✏️ EDIT: Add legal pages, social links, etc. -->
-          <a href="#about">About</a>
-          <a href="#cities">Cities</a>
+          <a href="#about">Our Story</a>
+          <a href="#partner">Partner With Us</a>
+          <a href="https://instagram.com/tellatale_in" target="_blank" rel="noopener">Instagram</a>
           <a href="mailto:hello@bytellatale.com">Contact</a>
         </div>
       </div>
-
-      <!-- ✏️ EDIT: Update year when needed -->
-      <p class="footer__copy">© 2025 Tell A Tale. All rights reserved.</p>
+      <!-- ✏️ EDIT: Update year as needed -->
+      <p class="footer__copy">© 2025 Tell A Tale. All rights reserved. · Made with intention in Bangalore.</p>
     </div>
   </footer>
 
