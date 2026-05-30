@@ -131,7 +131,7 @@ a { color: inherit; text-decoration: none; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5rem 2.5rem;
+  padding: 0.75rem 2.5rem;
   /* Dark warm brown to match logo background */
   background: rgba(38, 28, 21, 0.96);
   backdrop-filter: blur(12px);
@@ -139,11 +139,11 @@ a { color: inherit; text-decoration: none; }
   border-bottom: 1px solid rgba(255,255,255,0.06);
   transition: padding 0.3s;
 }
-.nav.scrolled { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+.nav.scrolled { padding-top: 0.5rem; padding-bottom: 0.5rem; }
 
 /* Logo image */
 .nav__logo-img {
-  height: 88px;
+  height: 56px;
   width: auto;
   display: block;
   object-fit: contain;
@@ -270,7 +270,7 @@ a { color: inherit; text-decoration: none; }
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--color-warm);
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.75rem;
   animation: fadeUp 1s var(--ease-out) 0.1s both;
 }
 .hero__title {
@@ -285,7 +285,7 @@ a { color: inherit; text-decoration: none; }
 }
 /* Hero logo — replaces the big title text */
 .hero__logo {
-  margin-bottom: 2rem;
+  margin-bottom: 0.75rem;
   animation: fadeUp 1s var(--ease-out) 0.2s both;
 }
 .hero__logo-img {
@@ -387,7 +387,16 @@ a { color: inherit; text-decoration: none; }
 }
 .about__quote cite {
   display: block;
-  margin-top: 0.8rem;
+  margin-top: 0.6rem;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-family: var(--font-body);
+  color: var(--color-muted);
+  letter-spacing: 0.04em;
+}
+.about__quote-closing {
+  display: block;
+  margin-top: 0.5rem;
   font-size: 0.85rem;
   font-style: normal;
   font-family: var(--font-body);
@@ -792,7 +801,7 @@ a { color: inherit; text-decoration: none; }
   .nav__links { display: none; }
   .nav__burger { display: flex; }
   .nav__drawer { display: flex; }
-  .nav__logo-img { height: 60px; }
+  .nav__logo-img { height: 44px; }
   .hero__title { font-size: clamp(3.2rem, 18vw, 5rem); }
   .hero__logo-img { width: clamp(220px, 80vw, 340px); }
   .hero__actions { flex-direction: column; align-items: center; }
